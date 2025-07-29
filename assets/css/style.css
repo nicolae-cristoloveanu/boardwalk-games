@@ -1,4 +1,3 @@
-
 /* Google Fonts Inter import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 
@@ -7,12 +6,45 @@
 
 
 
-body {
+/* CSS Variables */
 
-    font-family: 'Inter', sans-serif;
+
+:root {
+
+    /* Fonts */
+    --primary-font: 'Inter', sans-serif;
+    --secondary-font: 'Macondo', sans-serif;
+   
+
+   /* Colors */
+    --primary-color: #71450c;
+    --secondary-color: #aa9581;
+    --highlight-color: #416a8e;
+    --highlight-color-light: #7a9fc2;
+
+   
 }
 
-h1 {
 
-    font-family: 'Macondo', sans-serif;
+
+
+body {
+
+    font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3 {
+
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+
+
+}
+
+
+.sub-heading-color {
+
+    color: var(--highlight-color);
 }
