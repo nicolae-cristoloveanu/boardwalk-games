@@ -26,7 +26,7 @@
 }
 
 
-
+/* Global Styles */
 
 body {
 
@@ -39,6 +39,7 @@ h3 {
 
     font-family: var(--secondary-font);
     color: var(--primary-color);
+    text-transform: uppercase;
 
 
 }
@@ -47,6 +48,13 @@ h3 {
 .sub-heading-color {
 
     color: var(--highlight-color);
+}
+
+.section {
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
 }
 
 
@@ -63,6 +71,14 @@ h3 {
     width: 30px;
 
 
+
+}
+
+/* Header */
+
+#header .lead {
+
+    font-family: var(--secondary-font);
 
 }
 
