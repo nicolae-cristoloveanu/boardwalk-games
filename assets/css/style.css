@@ -109,6 +109,12 @@ h2 {
 }
 
 
+#new-games .card,
+#fav-games .card {
+    border: none;
+}
+
+
 /* Media queries */
 
 
@@ -123,7 +129,7 @@ h2 {
 
     }
 
-    
+
 
 }
 
@@ -149,7 +155,7 @@ h2 {
 
     }
 
-    
+
 
 }
 
@@ -163,7 +169,7 @@ h2 {
 
     }
 
-    
+
 
 }
 
