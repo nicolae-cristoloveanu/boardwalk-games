@@ -17,7 +17,7 @@
    
 
    /* Colors */
-    --primary-color: #71450c;
+    --primary-color: #3e2402;
     --secondary-color: #aa9581;
     --highlight-color: #416a8e;
     --highlight-color-light: #7a9fc2;
@@ -47,6 +47,23 @@ h3 {
 .sub-heading-color {
 
     color: var(--highlight-color);
+}
+
+
+/* Navbar */
+
+
+#navbar {
+
+    background-color: var(--primary-color);
+}
+
+#navbar .logo {
+
+    width: 30px;
+
+
+
 }
 
 /* .container, .row {
