@@ -262,11 +262,41 @@ h2 {
 
     }
 
-
-
 }
 
+/* Events section improvements */
+#events .table-responsive {
+    border-radius: 0.375rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
 
+#events .badge {
+    font-weight: 500;
+}
+
+/* Form improvements */
+#game-reservation .form-label,
+#booking-form .form-label {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 320px) {
+    .section {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    #events .table {
+        font-size: 0.875rem;
+    }
+    
+    #events .badge {
+        font-size: 0.875rem !important;
+        padding: 0.5rem 1rem !important;
+    }
+}
 
 /* .container, .row {
 

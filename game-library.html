@@ -43,7 +43,10 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#events">Events</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="game-library.html">Games</a>
@@ -256,6 +259,59 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+
+        <!-- Game reservation form section -->
+        <section id="game-reservation" class="container section">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="display-6">RESERVE A GAME</h2>
+                    <p class="col-12 col-lg-8 mx-auto">
+                        Reserve a board game for your next visit to Boardwalk Games. Pick your challenge, and let the adventure begin!
+                        Fill out your details and preferred game below, and we'll have it set aside for you when you arrive.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <form action="success.html" method="get">
+                        <div class="row">
+                            <div class="col-12 col-md-4 mb-3">
+                                <label for="fullname" class="form-label">Full name</label>
+                                <input class="form-control" id="fullname" name="fullname" type="text" required>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <label for="phone" class="form-label">Phone number</label>
+                                <input class="form-control" id="phone" name="phone" type="tel" required>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input class="form-control" id="email" name="email" type="email" required>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="game-select" class="form-label">Select game</label>
+                                <select id="game-select" class="form-select" name="game-select" required>
+                                    <option value="" selected>Select game</option>
+                                    <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                                    <option value="mystic-woods">Mystic Woods</option>
+                                    <option value="captains-gambit">Captain's Gambit</option>
+                                    <option value="critter-quest">Critter Quest</option>
+                                    <option value="settlers-of-catan">Settlers of Catan</option>
+                                    <option value="ticket-to-ride">Ticket to Ride</option>
+                                    <option value="azul">Azul</option>
+                                    <option value="love-letter">Love Letter</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="requested-date" class="form-label">Requested date</label>
+                                <input class="form-control" id="requested-date" name="requested-date" type="date" required>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn custom-button-filled">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>

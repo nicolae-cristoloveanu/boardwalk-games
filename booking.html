@@ -43,7 +43,10 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#events">Events</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="game-library.html">Games</a>
@@ -63,13 +66,11 @@
     <!-- Header section -->
     <header id="header" class="container section">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-8 text-center text-xl-start">
-                <h1 class="display-3">Boardwalk Games</h1>
+            <div class="col-12 col-md-8 text-center">
+                <h1 class="display-3">RESERVE A GAME</h1>
                 <p class="my-4">
-                    Thank you for choosing to reserve a spot at Boardwalk Games! Please
-                    fill out the form below with your details and preferred event. A
-                    member of our team will call you back as soon as possible to confirm
-                    your booking and answer any questions you may have.
+                    Reserve a board game for your next visit to Boardwalk Games. Pick your challenge, and let the adventure begin!
+                    Fill out your details and preferred game below, and we'll have it set aside for you when you arrive.
                 </p>
             </div>
         </div>
@@ -80,43 +81,49 @@
 
 
     <main>
-        <!-- Booking inquiry form section -->
+        <!-- Game reservation form section -->
         <section id="booking-form" class="container section">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-8">
-                    <h2>Booking inquiry</h2>
+                <div class="col-12 col-lg-8">
                     <form action="success.html" method="get">
                         <div class="row">
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <input class="form-control" id="name" name="name" type="text" required>
+                            <div class="col-12 col-md-4 mb-3">
+                                <label for="fullname" class="form-label">Full name</label>
+                                <input class="form-control" id="fullname" name="fullname" type="text" required>
                             </div>
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="email" class="form-label">Email</label>
+                            <div class="col-12 col-md-4 mb-3">
+                                <label for="phone" class="form-label">Phone number</label>
+                                <input class="form-control" id="phone" name="phone" type="tel" required>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <label for="email" class="form-label">Email address</label>
                                 <input class="form-control" id="email" name="email" type="email" required>
                             </div>
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="phone" class="form-label">Phone number</label>
-                                <input class="form-control" id="phone" name="phone" type="number" required>
-                            </div>
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="event-type" class="form-label">Event type</label>
-                                <select id="event-type" class="form-select" name="event-type" required>
-                                    <option value="" selected>Select</option>
-                                    <option value="regular-play">Reserve a table</option>
-                                    <option value="dnd">Dungeons & Dragons</option>
-                                    <option value="retro-night">Retro Game Night</option>
-                                    <option value="tournament">Tournament</option>
-                                    <option value="kids-party">Kids party</option>
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="game-select" class="form-label">Select game</label>
+                                <select id="game-select" class="form-select" name="game-select" required>
+                                    <option value="" selected>Select game</option>
+                                    <option value="catan">Catan</option>
+                                    <option value="ticket-to-ride">Ticket to Ride</option>
+                                    <option value="azul">Azul</option>
+                                    <option value="wingspan">Wingspan</option>
+                                    <option value="splendor">Splendor</option>
+                                    <option value="pandemic">Pandemic</option>
+                                    <option value="7-wonders">7 Wonders</option>
+                                    <option value="king-of-tokyo">King of Tokyo</option>
+                                    <option value="dominion">Dominion</option>
+                                    <option value="terraforming-mars">Terraforming Mars</option>
                                 </select>
                             </div>
-                            <div class="col-12 mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" rows="6" id="message" name="message" required></textarea>
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="requested-date" class="form-label">Requested date</label>
+                                <input class="form-control" id="requested-date" name="requested-date" type="date" required>
                             </div>
                         </div>
 
-                        <button type="submit" class="btn custom-button-outline">Submit</button>
+                        <div class="text-center">
+                            <button type="submit" class="btn custom-button-filled">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
