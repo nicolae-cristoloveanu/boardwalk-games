@@ -31,6 +31,7 @@
 body {
 
     font-family: var(--primary-font);
+    padding-top: 57.15px; /* Adjusted for fixed navbar height */
 }
 
 h1,
@@ -62,8 +63,8 @@ h2 {
 
 .section {
 
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    /* Prevent  navbar overlap */
+   padding-top: 4rem; 
 
 }
 
